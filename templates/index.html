@@ -26,7 +26,9 @@
     <!--Container Main start-->
     <div class="height-100 bg-light">
         <h1 class="welcome">WELCOME TO QUIZMASTER</h1>
+        <br>
         <h3>Kindly fill this form to start</h3>
+        <br><br>
         <form action="{{url_for('sort')}}" method="post" class="form">
      <!-- <label for="">number of questions</label> -->
   
@@ -62,14 +64,14 @@
         <option value="32">Entertainment: Cartoon &amp; Animations</option>
       </select>
      <label for="">
-        select difficulty
+        Select difficulty
        </label>
       <select class="diff" name="difficulty">
-        <option value="basic">basic</option>
-        <option value="intermediate">intermediate</option>
-        <option value="advance">advance</option>
+        <option value="basic">Basic</option>
+        <option value="intermediate">Intermediate</option>
+        <option value="advance">Advance</option>
       </select>
-      <button type="submit" class="btn bttn">generate questions</button>
+      <button type="submit" class="btn bttn">Generate questions</button>
       </form>
     </div>
     <!--Container Main end-->
