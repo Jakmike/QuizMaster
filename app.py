@@ -47,7 +47,7 @@ def newexam(encoded_data):
         json.dump(question_bank, f)
     
     return render_template("start.html", questions=question_bank, name=name, amount=amount, category=category, difficulty=difficulty)
-
+#amount=amount, category=category, difficulty=difficulty
 
 @app.route("/startexam/<name>")
 def startexam(name):
