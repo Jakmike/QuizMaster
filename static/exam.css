@@ -137,3 +137,14 @@ button:hover{
         width: 700px;
     }
 }
+.end-session-message{
+    background-image: "{{ url_for('static', filename='quiz-logo.png') }}" ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    width: 10in;
+    height: 8in;
+}

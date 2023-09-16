@@ -35,7 +35,11 @@
         <p class="answers"></p>
       </ul>
       {%set previous= "previous"%} {%set submit= "end exam"%} {%set next= "next"%}
-      {% else %} {%set big = "Your session has Ended"%} {%set end = "start
+      {% else %} 
+      <div class="end-session-message">
+        <img src="{{ url_for('static', filename='quiz-logo.png') }}" alt="Your Logo Alt Text"> <!-- Add the logo here -->
+      </div>
+      <!--{%set big = "Your session has Ended"%}--> {%set end = "start
       over"%}
       <h1> {{big}} </h1>
       <a href="{{url_for('index')}}"> {{end}} </a>
