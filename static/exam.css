@@ -139,16 +139,16 @@ button:hover{
 }
 /*.end-session-message{
     background-image: "{{ url_for('static', filename='quiz-logo.png') }}" ;
-    background-size: cover;
+    background-size: none;
     background-position: center;
     background-repeat: no-repeat;
     display: flexbox;
     justify-content: center;
     align-items: center;
-    width: 10in;
-    height: 8in;
+    width: 25%;
+    height:25%;
 }*/
-h1 {
+ h1 {
     font-size: 24px;
     color: rgb(134, 18, 18);
     margin-bottom: 10px;

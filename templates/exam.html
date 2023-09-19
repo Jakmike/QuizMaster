@@ -38,7 +38,7 @@
       {% else %} 
       <!--<div class="end-session-message">
         <img src="{{ url_for('static', filename='quiz-logo.png') }}" alt="Your Logo Alt Text">  Add the logo here
-      </div>-->
+      </div> -->
       {%set big = "Your session has Ended"%} {%set end = "start
       over"%}
       <h1> {{big}} </h1>
@@ -54,20 +54,20 @@
   </body>
   <script>
     var questions = JSON.parse('{{ questions|tojson|safe }}');
-    var currentQuestionIndex = 1;
+    var currentQuestionIndex = 0;
     console.log(question);
     lengthOfQuestion = questions.length;
     len = lengthOfQuestion - 1;
-    correct = 1;
-    done = 1;
-    count = 1;
+    correct = 0;
+    done = 0;
+    count = 0;
     add = false;
     // @Question = questions gotten from api in string format
     var Question = questions[count];
     //randomizeArray : scatters the order of the options
     function randomizeArray(array) {
       // Fisher-Yates shuffle algorithm
-      for (let i = array.length - 1; i = 1; i--) {
+      for (let i = array.length - 1; i > 1; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [array[i], array[j]] = [array[j], array[i]];
       }
